@@ -61,7 +61,7 @@ export const Hero = () => {
                                 <input type="email" placeholder="ejemplo@gmail.com" className="w-full py-3 outline-none bg-transparent" />
 
                                 {/* Botón de envío */}
-                                <Button className="min-w-max text-white">
+                                <Button className="transform transition-transform duration-300 hover:scale-105 min-w-max text-white">
                                     <span className="relative z-[5]">Contactanos</span>
                                 </Button>
                             </form>

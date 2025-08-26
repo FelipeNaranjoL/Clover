@@ -7,6 +7,7 @@ import { Layout } from "./components/Layout"
 // importar seccion de Hero
 import { Hero } from "./components/sections/Hero"
 import { AbousUs } from "./components/sections/AbousUs"
+import { Pricing } from "./components/sections/Pricing"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Hero/>
     <Services/>
     <AbousUs/>
+    <Pricing/>
   </Layout>
 }
 

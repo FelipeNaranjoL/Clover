@@ -4,20 +4,35 @@ import { Title } from "../shared/Title";
 import { Paragraph } from "../shared/Paragraph";
 import { Info } from "../Cards/Info";
 
+// Sección "About Us"
 export const AbousUs = () => {
     return (
         <section id="about-us">
             <Container className="flex flex-col md:flex-row gap-10 lg:gap-12 items-center">
+                
+                {/* Imagen ilustrativa */}
                 <div className="w-full md:w5/12 lg:w-1/2">
                     <div className="w-full h-80 sm:h-96 relative">
-                        <img src={logo} alt="Our mission" className="w-full h-full object-cover rounded-3xl shadow-lg relativez-10" />
+                        <img 
+                            src={logo} 
+                            alt="Our mission" 
+                            className="w-full h-full object-cover rounded-3xl shadow-lg relativez-10" 
+                        />
                     </div>
                 </div>
+
+                {/* Contenido de texto */}
                 <div className="w-full md:w-7/12 lg:w-1/2 flex flex-col">
                     <Title>Hola mundo</Title>
-                    <Paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quos a id consectetur in? Amet recusandae placeat cupiditate delectus numquam!</Paragraph>
+                    <Paragraph>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Sequi quos a id consectetur in? Amet recusandae placeat cupiditate delectus numquam!
+                    </Paragraph>
+
+                    {/* Tarjetas de información */}
                     <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
                         <Info title="Misión" description="Hola mundo">
+                            {/* Icono */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="30"
@@ -34,7 +49,9 @@ export const AbousUs = () => {
                                 />
                             </svg>
                         </Info>
-                                                <Info title="Misión" description="Hola mundo">
+
+                        <Info title="Misión" description="Hola mundo">
+                            {/* Icono */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="30"
