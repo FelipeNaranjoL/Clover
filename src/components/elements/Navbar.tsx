@@ -10,8 +10,8 @@ import { useThemeClover } from "../../ColorClover/ThemeClover"; // Ajusta la rut
 const navItems = [
     { href: "#", text: "Inicio" },
     { href: "#", text: "Valores" },
-    { href: "#", text: "Quienes somos" },
-    { href: "#", text: "Tarifas" }
+    { href: "#about-us", text: "Quienes somos" },
+    { href: "#pricing", text: "Tarifas" }
 ];
 
 export const Navbar = () => {

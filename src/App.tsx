@@ -6,6 +6,7 @@ import { Services } from "./components/sections/Services"
 import { Layout } from "./components/Layout" 
 // importar seccion de Hero
 import { Hero } from "./components/sections/Hero"
+import { AbousUs } from "./components/sections/AbousUs"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return <Layout title= "Clover">
     <Hero/>
     <Services/>
+    <AbousUs/>
   </Layout>
 }
 
