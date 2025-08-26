@@ -1,7 +1,7 @@
 // Importaciones necesarias
 //------------------------------------------------------------
 // importar seccion de Layout
-import { Layout } from "./components/layout" 
+import { Layout } from "./components/Layout" 
 // importar seccion de Hero
 import { Hero } from "./components/sections/Hero"
 
