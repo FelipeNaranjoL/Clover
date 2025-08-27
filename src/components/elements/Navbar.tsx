@@ -2,7 +2,7 @@
 //------------------------------------------------------------
 import { Container } from "../shared/Container";
 import { NavItem } from "../shared/Navitems";
-import { useThemeClover } from "../../ColorClover/ThemeClover";
+// import { useThemeClover } from "../../ColorClover/ThemeClover";
 
 // Logos
 import logo from '../../assets/logo.png'
