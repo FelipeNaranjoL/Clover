@@ -14,7 +14,7 @@ export const Pricing = () => {
         <section id="pricing" className="py-5">
             {/* Encabezado de la sección */}
             <Container className="text-center">
-                <Title>Precios</Title>
+                <Title>Planes</Title>
                 <Paragraph className="mt-4">
                     Escoge el mejor plan para tus intereses.
                 </Paragraph>
