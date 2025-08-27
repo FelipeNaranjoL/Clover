@@ -2,6 +2,7 @@ import { Container } from "../shared/Container";
 import logo from "../../assets/LogoNegro.png";
 import { navItems } from "./Navbar";
 import { NavItem } from "../shared/Navitems";
+import { Copyright } from "../sections/Copyright";
 
 export const Footer = () => {
     return (
@@ -63,6 +64,8 @@ export const Footer = () => {
                     </div>
                 </div>
             </Container>
+            <Copyright />
         </footer>
+        
     );
 };

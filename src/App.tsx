@@ -9,6 +9,7 @@ import { Hero } from "./components/sections/Hero"
 import { AbousUs } from "./components/sections/AbousUs"
 import { Pricing } from "./components/sections/Pricing"
 import { OurTeam } from "./components/OurTeam"
+import { Copyright } from "./components/sections/Copyright"
 
 
 
