@@ -17,7 +17,7 @@ export const Button = ({ onClick, children, className = "" }: ButtonProps) => {
         // Botón con estilos base + clases personalizadas
         <button 
             onClick={onClick} 
-            className={`px-6 py-3 rounded-full outline-none cursor-pointer relative overflow-hidden border border-transparent bg-black ${className}`}
+            className={`px-6 py-3 rounded-full outline-none cursor-pointer relative overflow-hidden border border-transparent bg-black dark:bg-white dark:text-black ${className}`}
         >
             {children}
         </button>

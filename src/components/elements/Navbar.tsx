@@ -7,7 +7,7 @@ import { useThemeClover } from "../../ColorClover/ThemeClover"; // Ajusta la rut
 // import { BtnLink } from "./BtnLink"; // Si quieres usar el botón "Empecemos", puedes descomentar
 
 // Definición de items del menú de navegación
-const navItems = [
+export const navItems = [
     { href: "#", text: "Inicio" },
     { href: "#", text: "Valores" },
     { href: "#about-us", text: "Quienes somos" },
