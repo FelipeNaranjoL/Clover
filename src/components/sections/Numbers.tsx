@@ -11,26 +11,26 @@ export const Numbers = () => {
                     
                     {/* Item 1 */}
                     <div className="text-center px-5">
-                        <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">250+</h2>
-                        <p className="mt-2 text-heading-3">Lorem ipsum dolor sit amet consectetur.</p>
+                        <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">+12</h2>
+                        <p className="mt-2 text-heading-3">Sucursales en Latinoamérica.</p>
                     </div>
 
                     {/* Item 2 */}
                     <div className="text-center px-5">
-                        <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">250+</h2>
-                        <p className="mt-2 text-heading-3">Lorem ipsum dolor sit amet consectetur.</p>
+                        <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">+125</h2>
+                        <p className="mt-2 text-heading-3">Proyectos finalizados con éxito.</p>
                     </div>
 
                     {/* Item 3 */}
                     <div className="text-center px-5">
-                        <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">250+</h2>
-                        <p className="mt-2 text-heading-3">Lorem ipsum dolor sit amet consectetur.</p>
+                        <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">+10</h2>
+                        <p className="mt-2 text-heading-3">Clientes con reconocimiento mundial.</p>
                     </div>
 
                     {/* Item 4 */}
                     <div className="text-center px-5">
-                        <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">250+</h2>
-                        <p className="mt-2 text-heading-3">Lorem ipsum dolor sit amet consectetur.</p>
+                        <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">+9</h2>
+                        <p className="mt-2 text-heading-3">Países prefieren nuestros servicios.</p>
                     </div>
                 </div>
             </Container>

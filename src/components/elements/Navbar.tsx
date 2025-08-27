@@ -1,17 +1,19 @@
 // Importaciones necesarias
 //------------------------------------------------------------
 import { Container } from "../shared/Container";
-import logo from "../../assets/react.svg";
 import { NavItem } from "../shared/Navitems";
-import { useThemeClover } from "../../ColorClover/ThemeClover"; // Ajusta la ruta según tu proyecto
-// import { BtnLink } from "./BtnLink"; // Si quieres usar el botón "Empecemos", puedes descomentar
+import { useThemeClover } from "../../ColorClover/ThemeClover";
+
+// Logos
+import logoNegro from "../../assets/logo.svg";        // Logo negro (modo claro)
+import logoBlanco from "../../assets/logoBlanco.svg"; // Logo blanco (modo oscuro)
 
 // Definición de items del menú de navegación
 export const navItems = [
     { href: "#", text: "Inicio" },
-    { href: "#", text: "Valores" },
     { href: "#about-us", text: "Quienes somos" },
-    { href: "#pricing", text: "Tarifas" }
+    { href: "#services", text: "Servicios" },
+    { href: "#pricing", text: "Planes" }
 ];
 
 export const Navbar = () => {
@@ -28,7 +30,18 @@ export const Navbar = () => {
                     {/* logo */}
                     <div className="min-w-max inline-flex relative">
                         <a href="/" className="relative flex items-center gap-3">
-                            <img src={logo} alt="Clover Logo" className="w-10 h-10" />
+                            {/* Logo negro (modo claro) */}
+                            <img
+                                src={logoNegro}
+                                alt="Clover Logo"
+                                className="w-10 h-10 block dark:invert"
+                            />
+                            {/* Logo blanco (modo oscuro) */}
+                            <img
+                                src={logoBlanco}
+                                alt="Clover Logo"
+                                className="w-10 h-10 hidden light:invert"
+                            />
                             <div className="inline-flex text-lg font-semibold text-heading-1">
                                 Clover
                             </div>
@@ -44,11 +57,6 @@ export const Navbar = () => {
                                 <NavItem href={item.href} text={item.text} key={key} />
                             ))}
                         </ul>
-
-                        {/* Botón "Empecemos" */}
-                        {/* <div className="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-border lg:border-0 px-6 lg:px-0">
-                            <BtnLink text="Empecemos" href="#cta" className="" />
-                        </div> */}
                     </div>
 
                     {/* Botón de alternar tema */}

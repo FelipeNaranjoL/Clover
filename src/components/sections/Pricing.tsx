@@ -14,7 +14,7 @@ export const Pricing = () => {
         <section id="pricing" className="py-5">
             {/* Encabezado de la sección */}
             <Container className="text-center">
-                <Title>Precios </Title>
+                <Title>Precios</Title>
                 <Paragraph className="mt-4">
                     Escoge el mejor plan para tus intereses.
                 </Paragraph>
@@ -22,21 +22,21 @@ export const Pricing = () => {
 
             {/* Lista de planes */}
             <Container className="mt-12">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="flex flex-wrap justify-center gap-8">
                     {pricingPlans.map((plan, key) => (
-                        <div key={key} className="relative group h-full">
+                        <div key={key} className="w-full md:w-[30%]">
                             {/* Contenedor con borde degradado */}
                             <div className="bg-gradient-to-r from-blue-600 to-violet-600 p-1 rounded-3xl h-full">
                                 <div
                                     className="bg-box-bg border border-box-border rounded-3xl shadow-lg shadow-box-shadow
-                                p-8 flex flex-col h-full relative"
+          p-8 flex flex-col h-full relative"
                                 >
                                     {/* Badge de mejor oferta */}
                                     {plan.bestValue && (
                                         <div
                                             className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary
-                                                    text-white text-xs font-bold uppercase tracking-wider
-                                                    px-3 py-1 rounded-full bg-gradient-to-r from-blue-600 to-violet-600"
+                         text-white text-xs font-bold uppercase tracking-wider
+                         px-3 py-1 rounded-full bg-gradient-to-r from-blue-600 to-violet-600"
                                         >
                                             Oferta
                                         </div>
@@ -47,17 +47,17 @@ export const Pricing = () => {
                                         {plan.title}
                                     </h3>
 
-                                    {/* Precio del plan */}
+                                    {/* Precio del plan
                                     <p className="mt-4 text-4xl font-bold text-heading-1">
                                         {plan.price}
-                                    </p>
+                                    </p> */}
 
                                     {/* Lista de características */}
                                     <ul className="mt-6 flex-1 space-y-3 text-left text-heading-3">
                                         {plan.features.map((feature, keyFeatures) => (
                                             <li key={keyFeatures} className="flex items-center gap-2">
                                                 <span className="text-primary">✅ </span>
-                                                <span>{feature} </span>
+                                                <span>{feature}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -73,6 +73,7 @@ export const Pricing = () => {
                         </div>
                     ))}
                 </div>
+
             </Container>
         </section>
     );

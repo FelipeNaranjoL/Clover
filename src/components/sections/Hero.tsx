@@ -1,7 +1,7 @@
 import { Button } from "../elements/Button";
 import { Container } from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
-import logo from "../../assets/images.jpg";
+import logo from "../../assets/logo.svg";
 import { Numbers } from "./Numbers";
 
 // Componente principal de la sección Hero
@@ -22,15 +22,17 @@ export const Hero = () => {
                 lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
                     <h1 className="text-heading-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold">
                         Somos
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r  from-blue-600 to-violet-600 ml-2">
+                        <span className="text-heading-1 font-bold bg-clip-text ml-2">
                             Clover
                         </span>
-                        , La agencia top de chile
+                        , La agencia top de chile.
                     </h1>
 
                     {/* Descripción */}
                     <Paragraph className="mt-8">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis.
+                        Impulsamos tu marca al siguiente nivel.
+                        Creamos experiencias memorables que conectan con tu audiencia.
+                        Transformamos ideas en resultados que se ven y se sienten.
                     </Paragraph>
 
                     {/* Formulario de contacto */}
@@ -74,8 +76,8 @@ export const Hero = () => {
                     <img
                         src={logo}
                         alt="Clover Logo"
-                        width={2350}
-                        height={2350}
+                        width={100}
+                        height={100}
                         className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-non max-h-96"
                     />
                 </div>

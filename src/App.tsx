@@ -8,15 +8,18 @@ import { Layout } from "./components/Layout"
 import { Hero } from "./components/sections/Hero"
 import { AbousUs } from "./components/sections/AbousUs"
 import { Pricing } from "./components/sections/Pricing"
+import { OurTeam } from "./components/OurTeam"
+
 
 
 function App() {
   // titulo de la pagina, en este caso Clover
   return <Layout title= "Clover">
     <Hero/>
-    <Services/>
     <AbousUs/>
+    <Services/>
     <Pricing/>
+    <OurTeam/>
   </Layout>
 }
 

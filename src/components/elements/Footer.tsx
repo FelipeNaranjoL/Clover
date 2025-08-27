@@ -12,7 +12,7 @@ export const Footer = () => {
 
                     {/* Parte izquierda: logo + enlaces */}
                     <div className="flex flex-col items-center md:items-start gap-4 w-full md:w-1/2">
-                        
+
                         {/* Logo centrado en móviles */}
                         <div className="flex items-center gap-3">
                             <img src={logo} alt="Clover Logo" className="w-7 h-7" />
@@ -29,6 +29,25 @@ export const Footer = () => {
                                     text={item.text} />
                             ))}
                         </ul>
+                        {/* Iconos de contacto */}
+                        <div className="flex flex-row gap-4 mt-4">
+                            {/* Teléfono */}
+                            <a className="flex items-center gap-1 text-heading-1 hover:text-primary transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5.25a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 012.25 2.25v3a2.25 2.25 0 01-2.25 2.25h-.75a11.37 11.37 0 005.25 5.25v-.75a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 012.25 2.25v3a2.25 2.25 0 01-2.25 2.25H19.5c-8.284 0-15-6.716-15-15V5.25z" />
+                                </svg>
+                                +56 9 1234 5678
+                            </a>
+
+
+                            {/* Correo */}
+                            <a className="flex items-center gap-1 text-heading-1 hover:text-primary transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4 4-4-4m0-6h8a2 2 0 012 2v8a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2z" />
+                                </svg>
+                                info@clover.com
+                            </a>
+                        </div>
                     </div>
 
                     {/* Parte derecha: Google Maps */}

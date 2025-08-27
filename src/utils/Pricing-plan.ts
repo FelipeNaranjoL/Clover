@@ -9,31 +9,34 @@
  */
 export const pricingPlans = [
     {
-        title: "Básico",
-        price: "$9.990",
+        title: "Email Marketing",
         features: [
-            "Lorem ipsum dolor sit amet consectetur",
-            "adipisicing elit. Harum eos possimus ipsam",
-            "animi et nesciunt est enim itaque recusandae deleniti!"
+            "Diseño, segmentación y envio hasta 4 newsletters/mes.",
+            "Reportes de aperturas y clics.",
+
         ],
     },
     {
-        title: "Básico",
-        price: "$9.990",
+                title: "E-commerce y Marketplace Managment",
         features: [
-            "Lorem ipsum dolor sit amet consectetur",
-            "adipisicing elit. Harum eos possimus ipsam",
-            "animi et nesciunt est enim itaque recusandae deleniti!"
+            "Gestión de catálogo.",
+            "Optimización de fichas de producto.",
+            "Control de ventas."
         ],
+
         bestValue: true,
     },
     {
-        title: "Básico",
-        price: "$9.990",
+        title: "SEO",
         features: [
-            "Lorem ipsum dolor sit amet consectetur",
-            "adipisicing elit. Harum eos possimus ipsam",
-            "animi et nesciunt est enim itaque recusandae deleniti!"
+            "Optimización manual del sitio web.",
+            "Análisis de palabras clave y mejoras de posicionamiento.",
+        ],
+    },
+        {
+        title: "Publicidad digital",
+        features: [
+            "Planificación, ejecución y optimización de campañas pagadas en Google, Meta, TikTok Ads,etc.",
         ],
     },
 ];
