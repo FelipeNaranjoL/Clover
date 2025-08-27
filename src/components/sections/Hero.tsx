@@ -1,7 +1,7 @@
 import { Button } from "../elements/Button";
 import { Container } from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/LogoNegro.png";
 import { Numbers } from "./Numbers";
 
 // Componente principal de la sección Hero
@@ -72,13 +72,11 @@ export const Hero = () => {
                 </div>
 
                 {/* Imagen lateral */}
-                <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-non lg:mx-0 mx-auto max-w-3xl">
+                <div className="flex flex-1 lg:w-3/4 relative lg:mx-0 mx-auto max-w-4xl">
                     <img
                         src={logo}
                         alt="Clover Logo"
-                        width={100}
-                        height={100}
-                        className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-non max-h-96"
+                        className="w-full h-auto rounded-3xl object-contain max-h-[600px]"
                     />
                 </div>
             </Container>

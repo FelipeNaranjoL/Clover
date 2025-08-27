@@ -5,8 +5,7 @@ import { NavItem } from "../shared/Navitems";
 import { useThemeClover } from "../../ColorClover/ThemeClover";
 
 // Logos
-import logoNegro from "../../assets/logo.svg";        // Logo negro (modo claro)
-import logoBlanco from "../../assets/logoBlanco.svg"; // Logo blanco (modo oscuro)
+import logo from '../../assets/logo.png'
 
 // Definición de items del menú de navegación
 export const navItems = [
@@ -18,7 +17,7 @@ export const navItems = [
 
 export const Navbar = () => {
     // Hook para alternar tema y obtener el estado actual
-    const { toggleTheme, theme } = useThemeClover();
+    // const { toggleTheme, theme } = useThemeClover();
 
     return (
         // Header principal, fijo arriba con z-index alto
@@ -32,16 +31,16 @@ export const Navbar = () => {
                         <a href="/" className="relative flex items-center gap-3">
                             {/* Logo negro (modo claro) */}
                             <img
-                                src={logoNegro}
+                                src={logo}
                                 alt="Clover Logo"
-                                className="w-10 h-10 block dark:invert"
+                                className="w-15 h-14 block"
                             />
                             {/* Logo blanco (modo oscuro) */}
-                            <img
+                            {/* <img
                                 src={logoBlanco}
                                 alt="Clover Logo"
                                 className="w-10 h-10 hidden light:invert"
-                            />
+                            /> */}
                             <div className="inline-flex text-lg font-semibold text-heading-1">
                                 Clover
                             </div>
@@ -60,7 +59,7 @@ export const Navbar = () => {
                     </div>
 
                     {/* Botón de alternar tema */}
-                    <div className="min-w-max flex items-center gap-x-3">
+                    {/* <div className="min-w-max flex items-center gap-x-3">
                         <button
                             onClick={toggleTheme} // Función para alternar tema
                             className="outline-hidden flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border cursor-pointer"
@@ -97,7 +96,7 @@ export const Navbar = () => {
                                 </svg>
                             )}
                         </button>
-                    </div>
+                    </div> */}
                 </nav>
             </Container>
         </header>

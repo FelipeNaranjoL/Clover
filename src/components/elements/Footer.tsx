@@ -1,5 +1,5 @@
 import { Container } from "../shared/Container";
-import logo from "../../assets/react.svg";
+import logo from "../../assets/LogoNegro.png";
 import { navItems } from "./Navbar";
 import { NavItem } from "../shared/Navitems";
 
@@ -15,8 +15,7 @@ export const Footer = () => {
 
                         {/* Logo centrado en móviles */}
                         <div className="flex items-center gap-3">
-                            <img src={logo} alt="Clover Logo" className="w-7 h-7" />
-                            <span className="text-lg font-semibold text-heading-1">Clover</span>
+                            <img src={logo} alt="Clover Logo" className="w-15 h-25" />
                         </div>
 
                         {/* Enlaces de navegación */}
